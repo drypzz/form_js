@@ -1,0 +1,174 @@
+/* import */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* geral */
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    background: url(/assets/gfx/main.png) center center no-repeat;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* container */
+
+.container{
+    background-color: #313131;
+    border-radius: 5px;
+    width: 420px;
+    max-width: 100%;
+}
+
+/* header */
+
+.header{
+    background-color: #262626;
+    border-bottom: 1px solid #698dc3;
+    padding: 20px 40px;
+}
+
+/* h2 */
+
+.header h2{
+    margin: 0;
+    color: #d7d7d7;
+    cursor: default;
+    font-style: italic;
+    text-align: center;
+}
+
+/* form */
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+/* label */
+
+.form-control label{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: rgb(150, 150, 150);
+    font-family: 'Roboto';
+    cursor: default;
+}
+
+/* required text */
+
+.form-control .required{
+    font-size: 11px;
+    text-shadow: 0px 0px 5px #c02222;
+    color: red;
+    margin-left: 5px;
+    font-style: italic;
+}
+
+/* input */
+
+.form-control input{
+    background: #2b2b2b;
+    border: 2px solid #1f2227;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #35383d inset;
+    color: rgb(150, 150, 150);
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.form-control input:focus{
+    border: 2px solid #698dc3;
+    color: #d7d7d7;
+}
+
+.form-control input:hover{
+    border: 2px solid #698dc3;
+}
+
+/* icon */
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 37px;
+    right: 10px;
+}
+
+/* infobox */
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: default;
+}
+
+/* button */
+
+.form button{
+    background: #2b2b2b;
+    border-radius: 3px;
+    border: 2px solid #1f2227;
+    box-shadow: 0px 0px 0px 1px #35383d inset;
+    color: rgb(150, 150, 150);
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.form button:hover{
+    background-color: #698dc3;
+    color: #fff;
+    border: 2px solid #698dc3;
+}
+
+
+/* infobox settings */
+
+/* .form-control.success input{
+    border-color: green;
+}
+*/
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+
+.form-control.success i.fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: red;
+    visibility: visible;
+}
