@@ -37,7 +37,7 @@ checkInputs = function(){
     if(mailValue === ''){
         setAddBox(consts['geral']['mail'], '* Insira um email.', 'error');
     }else if(!getEmail(mailValue)){
-        setAddBox(consts['geral']['mail'], '* Email invalido.');
+        setAddBox(consts['geral']['mail'], '* Email invalido.', 'error');
     }else{
         setAddBox(consts['geral']['mail']);
     }
