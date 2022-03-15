@@ -13,7 +13,7 @@ const consts = {
 
 // click
 
-consts['geral']['form'].addEventListener('click',
+consts['geral']['form'].addEventListener('submit',
     (e) => {
         e.preventDefault();
 
