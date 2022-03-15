@@ -10,9 +10,10 @@ const consts = {
     },
 };
 
+
 // click
 
-consts['geral']['form'].addEventListener('submit',
+consts['geral']['form'].addEventListener('click',
     (e) => {
         e.preventDefault();
 
